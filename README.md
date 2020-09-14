@@ -23,15 +23,14 @@ Creating another project for the production `prodproject`.
 Firstly we create a VPC network on `devproject`
 * Name: `dev-vpc`
 
-![ dev-vpc-name](https://github.com/amalk-money/gcp_wordpress/blob/master/screenShots/ dev-vpc-name.png)
+![dev-vpc-name](https://github.com/amalk-money/gcp_wordpress/blob/master/screenShots/dev-vpc-name.png)
 
 New subnet:
 * Name: `lab-dev`
 * Region: Singapore i.e., `asia-southeast1`
 * IP address range: `10.0.1.0/24`
 
-![ dev-vpc-sub](https://github.com/amalk-money/gcp_wordpress/blob/master/screenShots/dev-vpc-sub
-.png)
+![ dev-vpc-sub](https://github.com/amalk-money/gcp_wordpress/blob/master/screenShots/dev-vpc-sub.png)
 
 Click Create 
 
@@ -39,13 +38,13 @@ Click Create
 
 `dev-vpc` is now created
 
-![ dev](https://github.com/amalk-money/gcp_wordpress/blob/master/screenShots/dev.png)
+![dev](https://github.com/amalk-money/gcp_wordpress/blob/master/screenShots/dev.png)
 
 Another we create a VPC network on `prodproject`
 
 * Name: `prod-vpc`
 
-![ prod-vpc-name](https://github.com/amalk-money/gcp_wordpress/blob/master/screenShots/ prod-vpc-name.png)
+![prod-vpc-name](https://github.com/amalk-money/gcp_wordpress/blob/master/screenShots/prod-vpc-name.png)
 
 New subnet:
 
@@ -53,12 +52,11 @@ New subnet:
 * Region: US i.e., `us-west1`
 * IP address range: `10.0.2.0/24`
 
-![ prod -vpc-sub](https://github.com/amalk-money/gcp_wordpress/blob/master/screenShots/prod-vpc-sub
-.png)
+![ prod -vpc-sub](https://github.com/amalk-money/gcp_wordpress/blob/master/screenShots/prod-vpc-sub.png)
 
 Click Create 
 
-![ prod -vpc-create](https://github.com/amalk-money/gcp_wordpress/blob/master/screenShots/ prod -vpc-create.png)
+![ prod -vpc-create](https://github.com/amalk-money/gcp_wordpress/blob/master/screenShots/prod-vpc-create.png)
 
 `prod-vpc` is now created
 
@@ -94,11 +92,11 @@ Now, another VPC peering on `dev-project`
 * Project ID: `devproject-289412`
 * VPC network name: `dev-vpc`
 
-![ prod -peering-create](https://github.com/amalk-money/gcp_wordpress/blob/master/screenShots/prod -peering-create.png)
+![ prod-peering-create](https://github.com/amalk-money/gcp_wordpress/blob/master/screenShots/prod-peering-create.png)
 
 Click create and you will see that the status in `Active`.
 
-![ prod -peering-status](https://github.com/amalk-money/gcp_wordpress/blob/master/screenShots/prod -peering-status.png)
+![ prod -peering-status](https://github.com/amalk-money/gcp_wordpress/blob/master/screenShots/prod-peering-status.png)
 
 Now go back to `devproject` , you will see that the status is `Active` now
 
@@ -208,40 +206,40 @@ Just to see if the `MYSQL` server is running, connected using the cloud Shell
 
 And is working fine
 
-![sql-success](https://github.com/amalk-money/gcp_wordpress/blob/master/screenShots/ sql-success.png)
+![sql-success](https://github.com/amalk-money/gcp_wordpress/blob/master/screenShots/sql-success.png)
 
 ## Step 6: Connect the SQL DATABASE with the `wordpress` application launched in the kubernites cluster
 
 Using the external ip address, we access our wordpress site
 
-![site1](https://github.com/amalk-money/gcp_wordpress/blob/master/screenShots/ site1.png)
+![site1](https://github.com/amalk-money/gcp_wordpress/blob/master/screenShots/site1.png)
 
 Connect the site with the database
 
-![site2](https://github.com/amalk-money/gcp_wordpress/blob/master/screenShots/ site2.png)
+![site2](https://github.com/amalk-money/gcp_wordpress/blob/master/screenShots/site2.png)
 
 * Database Name: `wpdb`
 * Username: `root`
 * Password: created earlier
 * Database Host: It is visible on the mysql
 
-![site3](https://github.com/amalk-money/gcp_wordpress/blob/master/screenShots/ site3.png)
+![site3](https://github.com/amalk-money/gcp_wordpress/blob/master/screenShots/site3.png)
 
 Run the Installation
 
-![site4](https://github.com/amalk-money/gcp_wordpress/blob/master/screenShots/ site4.png)
+![site4](https://github.com/amalk-money/gcp_wordpress/blob/master/screenShots/site4.png)
 
 Provide the necessary information for your account
 
-![site5](https://github.com/amalk-money/gcp_wordpress/blob/master/screenShots/ site5.png)
+![site5](https://github.com/amalk-money/gcp_wordpress/blob/master/screenShots/site5.png)
 
 Login with the given credentials
 
-![site6](https://github.com/amalk-money/gcp_wordpress/blob/master/screenShots/ site6.png)
+![site6](https://github.com/amalk-money/gcp_wordpress/blob/master/screenShots/site6.png)
 
 Now you land onto your wordpress account
 
-![site7](https://github.com/amalk-money/gcp_wordpress/blob/master/screenShots/ site7.png)
+![site7](https://github.com/amalk-money/gcp_wordpress/blob/master/screenShots/site7.png)
 
 Publish your first blog
 
