@@ -82,7 +82,7 @@ Click create and you will see that the status in `inactive`.
 
 To make it active we need to create another VPC peering on `prod-project`.
 
-Now, another VPC peering on `dev-project`
+Now, another VPC peering on `prod-project`
 
 ![ prod-peering](https://github.com/amalk-money/gcp_wordpress/blob/master/screenShots/prod-peering.png)
 
@@ -113,7 +113,7 @@ Creating the cluster
 
 ![ cluster-basic](https://github.com/amalk-money/gcp_wordpress/blob/master/screenShots/cluster-basic.png)
 
-* Size of cluster: is used `1`
+* Size of cluster: I used `1` node
 
 ![ cluster-nodes](https://github.com/amalk-money/gcp_wordpress/blob/master/screenShots/cluster-nodes.png)
 
